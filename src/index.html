@@ -29,7 +29,7 @@
         </div>
 
         <div class="group-wrapper">
-          <div class="beer-group">
+          <div class="beer-group ales">
             <% json.BeerGuide2015_Data.forEach(function(row) {
               if (row.type == "ale") { %>
                 <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
@@ -39,24 +39,26 @@
             <div class="label">Ales</div>
           </div>
 
-          <div class="beer-group">
-            <% json.BeerGuide2015_Data.forEach(function(row) {
-              if (row.type == "lager") { %>
-                <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
-              <% }
-            }); %>
-            <div class="divider"></div>
-            <div class="label">Lagers</div>
-          </div>
+          <div class="second-group">
+            <div class="beer-group lagers">
+              <% json.BeerGuide2015_Data.forEach(function(row) {
+                if (row.type == "lager") { %>
+                  <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
+                <% }
+              }); %>
+              <div class="divider"></div>
+              <div class="label">Lagers</div>
+            </div>
 
-          <div class="beer-group">
-            <% json.BeerGuide2015_Data.forEach(function(row) {
-              if (row.type == "wheat") { %>
-                <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
-              <% }
-            }); %>
-            <div class="divider"></div>
-            <div class="label">Wheat</div>
+            <div class="beer-group">
+              <% json.BeerGuide2015_Data.forEach(function(row) {
+                if (row.type == "wheat") { %>
+                  <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
+                <% }
+              }); %>
+              <div class="divider"></div>
+              <div class="label">Wheat</div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,6 +72,8 @@
         <div><span class="credit">Development:</span> Audrey Carlsen</div>
         <div class="spacer"></div>
         <div><span class="credit">Sources:</span> <em>"The Brewers Association Guide to American Craft Beer," 2009, Brewers Association; 2008 BJCP Style Guidelines; Washington Brewers Guild; Seattle Public Library, reference librarians; samueladams.com/world_of_beer.aspx; beertutor.com; greatbrewers.com; beeradvocate.com; beerhistory.com; globalmalt.com</em></div>
+        <div class="spacer"></div>
+        <div class="copyright">Copyright 2015 The Seattle Times</div>
       </div>
     </div>
 

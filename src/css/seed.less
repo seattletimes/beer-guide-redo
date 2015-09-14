@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -50,7 +50,6 @@ body {
 
 .chatter {
   font-size: 18px;
-  width: 85%;
   margin: auto;
   padding-bottom: 20px;
 }
@@ -71,10 +70,34 @@ body {
   display: block;
   text-align: center;
 
+  .second-group {
+    display: inline-block;
+
+    .beer-group {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 1000px) {
+      display: block;
+    }
+  }
+
   .beer-group {
     display: inline-block;
     border-right: 2px solid @df-border-gray;
     padding: 0 30px;
+
+    &.ales {
+      @media (max-width: 1000px) {
+        border-right: 0;
+      }
+    }
+
+    &.lagers {
+      @media (max-width: 425px) {
+        border-right: 0;
+      }
+    }
 
     .dot {
       width: 45px;
@@ -166,6 +189,10 @@ body {
     font-size: 15px;
     font-family: @block;
   }
+}
+
+.copyright {
+  color: @df-middle-gray;
 }
 
 footer {
