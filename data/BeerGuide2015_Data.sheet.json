@@ -1,0 +1,162 @@
+[
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Pale",
+    "short": "pale",
+    "glass": "Nonic pint glass",
+    "flavor": "A pale ale with pronounced hop flavor.",
+    "image": "Nonic-pint-glass-pale.png",
+    "color": "#F3E86B"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "IPA",
+    "short": "ipa",
+    "glass": "Goblet or chalice",
+    "flavor": "A pale ale with pronounced hop flavor and caramel or nutty malt.",
+    "image": "Goblet-or-chalice-glass.png",
+    "color": "#DDA94A"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Bitter",
+    "short": "bitter",
+    "glass": "Nonic pint glass",
+    "flavor": "A pale ale with medium to high bitterness.",
+    "image": "Nonic-pint-glass-bitter.png",
+    "color": "#B37D2B"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Amber/Red",
+    "short": "amberred",
+    "glass": "Tumbler pint glass",
+    "flavor": "An amber/red ale with medium to high hop and toasted malt flavors.",
+    "image": "Tumbler-pint-glass.png",
+    "color": "#AA4825"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Scottish & Irish",
+    "short": "scottish",
+    "glass": "Thistle glass",
+    "flavor": "A strong ale with rich malty flavors and aromas.",
+    "image": "Thistle-glass-strong.png",
+    "color": "#8E5322"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Barley Wine",
+    "short": "barley",
+    "glass": "Tulip/snifter glass",
+    "flavor": "A strong ale with intensely malty caramel flavors and bitter hops .",
+    "image": "Tulip-or-snifter-glass.png",
+    "color": "#866427"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Old Ale",
+    "short": "oldale",
+    "glass": "Thistle glass",
+    "flavor": "A strong ale with sweet nutty malt and fruit flavors.",
+    "image": "Thistle-glass.png",
+    "color": "#6B4A25"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Brown",
+    "short": "brown",
+    "glass": "Mug or pint glass",
+    "flavor": "A dark ale with toasted with nutty malt flavor and little hop.",
+    "image": "Mug-glass.png",
+    "color": "#6B4A25"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Porter",
+    "short": "porter",
+    "glass": "Imperial pint glass",
+    "flavor": "A dark ale with roasted malt taste and light to firm hops.",
+    "image": "Imperial-pint-glass-porter.png",
+    "color": "#28150C"
+  },
+  {
+    "title": "ale",
+    "type": "ale",
+    "name": "Stout",
+    "short": "stout",
+    "glass": "Imperial pint glass",
+    "flavor": "A dark ale with roasted taste, low sweetness and high bitterness.",
+    "image": "Imperial-pint-glass-stout.png",
+    "color": "#110C09"
+  },
+  {
+    "title": "wheat",
+    "type": "wheat",
+    "name": "Hefeweizen",
+    "short": "wheat",
+    "glass": "Weizen glass",
+    "flavor": "A wheat ale with very low hop, more wheat flavor.",
+    "image": "Weizen-glass.png",
+    "color": "#F4E96B"
+  },
+  {
+    "title": "lager",
+    "type": "lager",
+    "name": "Light",
+    "short": "light",
+    "glass": "Becker pint glass or mug/Seidel glass",
+    "flavor": "A light lager with very little hop, bitterness or flavor.",
+    "image": "Becker-pint-glass.png",
+    "color": "#F3C15E"
+  },
+  {
+    "title": "lager",
+    "type": "lager",
+    "name": "Pilsner",
+    "short": "pilsner",
+    "glass": "Pilsner glass",
+    "flavor": "A pilsner lager with medium to high hop bitterness.",
+    "image": "Pilsner-glass.png",
+    "color": "#F3C15E"
+  },
+  {
+    "title": "lager",
+    "type": "lager",
+    "name": "Amber",
+    "short": "amber",
+    "glass": "Mug/Seidel glass or a pint glass",
+    "flavor": "An amber lager with sweet to mild malt flavor and medium hop bitterness.",
+    "image": "Seidel-glass.png",
+    "color": "#CA6828"
+  },
+  {
+    "title": "lager",
+    "type": "lager",
+    "name": "Bock",
+    "short": "bock",
+    "glass": "Stange glass or Tom Collins glass",
+    "flavor": "A strong lager with rich malty flavor.",
+    "image": "Collins-or-stange-glass.png",
+    "color": "#866427"
+  },
+  {
+    "title": "lager",
+    "type": "lager",
+    "name": "Dark",
+    "short": "dark",
+    "glass": "Tulip pint glass",
+    "flavor": "A dark lager with malt flavor throughout, moderately sweet.",
+    "image": "Tulip-pint-glass-dark.png",
+    "color": "#110C09"
+  }
+]

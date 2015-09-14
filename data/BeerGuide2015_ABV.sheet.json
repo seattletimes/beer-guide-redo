@@ -1,0 +1,362 @@
+[
+  {
+    "title": "pale",
+    "short": "pale",
+    "style": "Pale Ale",
+    "abv": "4.5-5.5%"
+  },
+  {
+    "title": "pale",
+    "short": "pale",
+    "style": "American-style",
+    "abv": "4.5-5.7"
+  },
+  {
+    "title": "pale",
+    "short": "pale",
+    "style": "Belgian-style",
+    "abv": "4.0-6.0"
+  },
+  {
+    "title": "ipa",
+    "short": "ipa",
+    "style": "India Pale Ale",
+    "abv": "5.1-7.6%"
+  },
+  {
+    "title": "ipa",
+    "short": "ipa",
+    "style": "Belgian IPA",
+    "abv": "6.0-12.0"
+  },
+  {
+    "title": "ipa",
+    "short": "ipa",
+    "style": "Imperial/Double IPA",
+    "abv": "7.5-10.5"
+  },
+  {
+    "title": "bitter",
+    "short": "bitter",
+    "style": "Ordinary",
+    "abv": "3.0-3.8%"
+  },
+  {
+    "title": "bitter",
+    "short": "bitter",
+    "style": "Special",
+    "abv": "3.7-4.8"
+  },
+  {
+    "title": "bitter",
+    "short": "bitter",
+    "style": "Extra special",
+    "abv": "3.7-4.8"
+  },
+  {
+    "title": "amberred",
+    "short": "amberred",
+    "style": "American Amber",
+    "abv": "4.5-5.7%"
+  },
+  {
+    "title": "amberred",
+    "short": "amberred",
+    "style": "Irish Red Ale",
+    "abv": "4.0-6.5"
+  },
+  {
+    "title": "amberred",
+    "short": "amberred",
+    "style": "Imperial/Double Red Ale",
+    "abv": "7.9-10.5"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "Flavored Wheat Ale",
+    "abv": "4.0-8.0%"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "White Ale",
+    "abv": "4.5-6.0"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "Hefeweizen",
+    "abv": "4.5-6.2"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "Weizenbier",
+    "abv": "4.3-5.6"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "Belgian-style",
+    "abv": "4.8-5.2"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "Dunkelweizen",
+    "abv": "4.5-6.0"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "Weizenbock",
+    "abv": "6.5-9.6"
+  },
+  {
+    "title": "scottish",
+    "short": "scottish",
+    "style": "Light",
+    "abv": "2.8-4.0%"
+  },
+  {
+    "title": "scottish",
+    "short": "scottish",
+    "style": "Heavy",
+    "abv": "3.5-4.1"
+  },
+  {
+    "title": "scottish",
+    "short": "scottish",
+    "style": "Export",
+    "abv": "4.0-4.9"
+  },
+  {
+    "title": "scottish",
+    "short": "scottish",
+    "style": "Scotch Ale",
+    "abv": "6.5-10.0"
+  },
+  {
+    "title": "barley",
+    "short": "barley",
+    "style": "English",
+    "abv": "8.0-12.0%"
+  },
+  {
+    "title": "barley",
+    "short": "barley",
+    "style": "American",
+    "abv": "8.0-12.0"
+  },
+  {
+    "title": "oldale",
+    "short": "oldale",
+    "style": "English",
+    "abv": "6.0-9.0%"
+  },
+  {
+    "title": "oldale",
+    "short": "oldale",
+    "style": "Belgian",
+    "abv": "7.0-11.0"
+  },
+  {
+    "title": "oldale",
+    "short": "oldale",
+    "style": "English mild",
+    "abv": "2.5-4.1%"
+  },
+  {
+    "title": "brown",
+    "short": "brown",
+    "style": "English-style",
+    "abv": "3.5-6.0"
+  },
+  {
+    "title": "brown",
+    "short": "brown",
+    "style": "American-style",
+    "abv": "4.2-6.0"
+  },
+  {
+    "title": "brown",
+    "short": "brown",
+    "style": "German-style",
+    "abv": "4.3-5.5"
+  },
+  {
+    "title": "brown",
+    "short": "brown",
+    "style": "Belgian-style",
+    "abv": "6.0-10.0"
+  },
+  {
+    "title": "porter",
+    "short": "porter",
+    "style": "Brown Porter",
+    "abv": "3.8-5.2%"
+  },
+  {
+    "title": "porter",
+    "short": "porter",
+    "style": "Robust",
+    "abv": "4.8-6.0"
+  },
+  {
+    "title": "porter",
+    "short": "porter",
+    "style": "Baltic",
+    "abv": "5.5-9.5"
+  },
+  {
+    "title": "stout",
+    "short": "stout",
+    "style": "Dry Stout",
+    "abv": "3.2-5.5%"
+  },
+  {
+    "title": "stout",
+    "short": "stout",
+    "style": "Oatmeal Stout",
+    "abv": "3.3-6.1%"
+  },
+  {
+    "title": "stout",
+    "short": "stout",
+    "style": "Sweet Stout (chocolate, coffee)",
+    "abv": "4.5-6.5"
+  },
+  {
+    "title": "stout",
+    "short": "stout",
+    "style": "Imperial Stout",
+    "abv": "7.8-9.0"
+  },
+  {
+    "title": "stout",
+    "short": "stout",
+    "style": "Imperial Russian",
+    "abv": "8.0-13.0"
+  },
+  {
+    "title": "light",
+    "short": "light",
+    "style": "American Lite",
+    "abv": "2.9-4.5%"
+  },
+  {
+    "title": "light",
+    "short": "light",
+    "style": "Tropical-style",
+    "abv": "3.8-5.0"
+  },
+  {
+    "title": "light",
+    "short": "light",
+    "style": "Belgian-style",
+    "abv": "4.0-6.0"
+  },
+  {
+    "title": "light",
+    "short": "light",
+    "style": "American Standard",
+    "abv": "4.1-4.8"
+  },
+  {
+    "title": "light",
+    "short": "light",
+    "style": "American Premium",
+    "abv": "4.6-5.1"
+  },
+  {
+    "title": "light",
+    "short": "light",
+    "style": "Munich helles",
+    "abv": "4.5-5.6"
+  },
+  {
+    "title": "pilsner",
+    "short": "pilsner",
+    "style": "Bohemian- or Czech-style",
+    "abv": "4.0-5.0%"
+  },
+  {
+    "title": "pilsner",
+    "short": "pilsner",
+    "style": "German-style",
+    "abv": "4.1-5.4"
+  },
+  {
+    "title": "pilsner",
+    "short": "pilsner",
+    "style": "American-style",
+    "abv": "5.0-6.0"
+  },
+  {
+    "title": "amber",
+    "short": "amber",
+    "style": "Octoberfest",
+    "abv": "5.0-6.5%"
+  },
+  {
+    "title": "amber",
+    "short": "amber",
+    "style": "Märzen",
+    "abv": "4.1-6.5"
+  },
+  {
+    "title": "amber",
+    "short": "amber",
+    "style": "Vienne",
+    "abv": "4.5-5.7"
+  },
+  {
+    "title": "amber",
+    "short": "amber",
+    "style": "American-style",
+    "abv": "5.5-8.0"
+  },
+  {
+    "title": "bock",
+    "short": "bock",
+    "style": "Heller bock/Maibock",
+    "abv": "4.0-5.0%"
+  },
+  {
+    "title": "bock",
+    "short": "bock",
+    "style": "Bock",
+    "abv": "4.1-5.1"
+  },
+  {
+    "title": "bock",
+    "short": "bock",
+    "style": "Doppelbock",
+    "abv": "4.6-5.4"
+  },
+  {
+    "title": "bock",
+    "short": "bock",
+    "style": "Eisbock",
+    "abv": "5.0-6.0"
+  },
+  {
+    "title": "dark",
+    "short": "dark",
+    "style": "American-style",
+    "abv": "4.0-5.5%"
+  },
+  {
+    "title": "dark",
+    "short": "dark",
+    "style": "Münchner Dunkel",
+    "abv": "4.5-5.6"
+  },
+  {
+    "title": "dark",
+    "short": "dark",
+    "style": "Schwarzbier",
+    "abv": "3.8-5.0"
+  }
+]

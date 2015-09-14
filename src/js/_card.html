@@ -1,0 +1,53 @@
+<div class="text-box">
+  <div class="title"><%= data.name %></div>
+  <div class="text">
+    <%= data.flavor %>
+    <div class="glass">
+      <img src="./assets/<%= data.image %>">
+      <div class="glass-text">
+        <div class="title">Glass style</div>
+        <div class="text"><%= data.glass %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-box">
+  <div class="title">Types</div>
+  <div class="text">
+    <em>Percent alcohol per volume</em>
+
+    <table class="abv-table">
+      <% data.abvs.forEach(function(abv) { %>
+        <tr>
+          <td class="style"><%= abv.style %></td>
+          <td class="abv"><%= abv.abv %></td>
+        </tr>
+      <% }); %>
+    </table>
+  </div>
+</div>
+
+<div class="text-box">
+  <% if (data.type == "ale") { %>
+    <div class="title">Ales?</div>
+    <div class="text">
+      Ales are made with a top-fermenting yeast (yeast that gathers at the surface at the start of the brewing) at temperatures between 65 and 75 degrees Fahrenheit for two to three weeks. Top-fermenting yeasts produce phenols, which impart spicy undertones, and esters, which provide fruity flavors and aromas. Ales are usually higher in alcohol than lagers. The ale family includes Pale, Amber/Red, Strong and Dark.
+    </div>
+  <% } %>
+
+  <% if (data.type == "lager") { %>
+    <div class="title">Lagers?</div>
+    <div class="text">
+      Lagers are made with a bottom-fermenting yeast (the yeast gathers and sinks to the bottom during brewing) at cooler temperatures between 45 and 55 degrees Fahrenheit for four to six weeks and then stored cold at temperatures between 30 and 40 degrees Fahrenheit. Cold storage keeps acids and other by-products from forming, producing a clean and crisp taste. The lager family includes Light, Pilsner, Amber, Bock and Dark. Most lagers are less alcoholic than ales.
+    </div>
+  <% } %>
+
+  <% if (data.type == "wheat") { %>
+    <div class="title">Wheat?</div>
+    <div class="text">
+      Wheat ales use malted wheat in 40-60% of the recipe which puts them into the specialty beer category.
+    </div>
+  <% } %>
+</div>
+

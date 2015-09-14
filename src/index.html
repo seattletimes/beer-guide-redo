@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:700,500italic' rel='stylesheet' type='text/css'>
+    <%= t.include("partials/_adHead.html") %>
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <img class="top-image" src="./assets/beer-header-NEW.jpg">
+    </div>
+
+    <div class="container">
+      <div class="top">
+        <div class="title">We're here to help</div>
+        <div class="chatter">
+          Overwhelmed by the vast selection of beers at the local market? Stumped when asked if you prefer ales or lagers? If the answer is yes, then this is for you. This is a beginner's guide to the main styles of ales and lagers, and is not meant to be the definitive beer bible.
+        </div>
+
+        <div class="top divider"></div>
+
+        <div class="title">What color is your beer?</div>
+        <div class="chatter">
+          Pick a color
+        </div>
+
+        <div class="group-wrapper">
+          <div class="beer-group">
+            <% json.BeerGuide2015_Data.forEach(function(row) {
+              if (row.type == "ale") { %>
+                <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
+              <% }
+            }); %>
+            <div class="divider"></div>
+            <div class="label">Ales</div>
+          </div>
+
+          <div class="beer-group">
+            <% json.BeerGuide2015_Data.forEach(function(row) {
+              if (row.type == "lager") { %>
+                <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
+              <% }
+            }); %>
+            <div class="divider"></div>
+            <div class="label">Lagers</div>
+          </div>
+
+          <div class="beer-group">
+            <% json.BeerGuide2015_Data.forEach(function(row) {
+              if (row.type == "wheat") { %>
+                <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
+              <% }
+            }); %>
+            <div class="divider"></div>
+            <div class="label">Wheat</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box"></div>
+
+      <div class="credits">
+        <div><span class="credit">Research:</span> Mark Nowlin</div>
+        <div><span class="credit">Design:</span> Frank Mina</div>
+        <div><span class="credit">Graphics:</span> Kelly Shea</div>
+        <div><span class="credit">Development:</span> Audrey Carlsen</div>
+        <div class="spacer"></div>
+        <div><span class="credit">Sources:</span> <em>"The Brewers Association Guide to American Craft Beer," 2009, Brewers Association; 2008 BJCP Style Guidelines; Washington Brewers Guild; Seattle Public Library, reference librarians; samueladams.com/world_of_beer.aspx; beertutor.com; greatbrewers.com; beeradvocate.com; beerhistory.com; globalmalt.com</em></div>
+      </div>
+    </div>
+
+    <footer>
+      <a class="logo" href="http://www.seattletimes.com">
+        <img src="./assets/st-logo.png">
+      </a>
+      <a class="share-bottom"></a>
+    </footer>
+
+    <script>
+      var beerData = <%= JSON.stringify(json.BeerGuide2015_Data) %>
+      var abvData = <%= JSON.stringify(json.BeerGuide2015_ABV) %>
+    </script>
+
+    <script src="app.js"></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_adFoot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
