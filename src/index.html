@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:700,700italic,500' rel='stylesheet' type='text/css'>
     <%= t.include("partials/_adHead.html") %>
   </head>
   <body>
@@ -35,17 +35,24 @@
 
         <div class="title">What shade is your beer?</div>
         <div class="chatter">
-          <em>tktktk</em>
+          <div class="intro">The color of beer is mostly controlled by the malt that is used to brew it.</div>
+          <div class="intro">Most recipes combine different malts that create the color we see.</div>
+          <div class="pick">Pick a shade:</div>
         </div>
+      </div>
+
+      <div class="modal-container">
 
         <div class="group-wrapper">
           <div class="beer-group ales">
+            <div class="mobile label">Ales</div>
             <% json.BeerGuide2015_Data.forEach(function(row) {
               if (row.type == "ale") { %>
                 <div class="dot-container">
                   <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>">
                     <div class="dot-label"><%= row.label %></div>
                   </div>
+                  <div class="mobile-dot-label"><%= row.label %></div>
                 </div>
               <% }
             }); %>
@@ -54,37 +61,40 @@
 
           <div class="second-group">
             <div class="beer-group lagers">
+              <div class="mobile label">Lagers</div>
               <% json.BeerGuide2015_Data.forEach(function(row) {
                 if (row.type == "lager") { %>
-                  <div class="dot-container">
-                  <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>">
-                    <div class="dot-label"><%= row.label %></div>
-                  </div>
-                </div>
-                <% }
-              }); %>
-
-              <div class="label">Lagers</div>
-            </div>
-
-            <div class="beer-group">
-              <% json.BeerGuide2015_Data.forEach(function(row) {
-                if (row.type == "wheat") { %>
                   <div class="dot-container">
                     <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>">
                       <div class="dot-label"><%= row.label %></div>
                     </div>
+                    <div class="mobile-dot-label"><%= row.label %></div>
                   </div>
                 <% }
               }); %>
+              <div class="label">Lagers</div>
+            </div>
 
+            <div class="beer-group">
+              <div class="mobile label">Wheat</div>
+              <% json.BeerGuide2015_Data.forEach(function(row) {
+                if (row.type == "wheat") { %>
+                  <div class="wheat dot-container">
+                    <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>">
+                      <div class="dot-label"><%= row.label %></div>
+                    </div>
+                    <div class="mobile-dot-label"><%= row.label %></div>
+                  </div>
+                <% }
+              }); %>
               <div class="label">Wheat</div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="beer-box"></div>
+        <div class="beer-box"></div>
+
+      </div>
 
       <div class="info-box">
         <div class="text-box">

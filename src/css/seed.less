@@ -36,7 +36,7 @@ nav.top-bar {
     top: 30px;
     text-align: center;
     display: block;
-    z-index: 99999;
+    z-index: 9;
 
     @media @mobile {
       top: 0;
@@ -128,6 +128,12 @@ nav.top-bar {
   }
 }
 
+.pick {
+  padding-top: 15px;
+  color: @df-middle-gray;
+  font-family: @block;
+}
+
 .intro {
   @media @mobile {
     display: inline;
@@ -182,7 +188,7 @@ nav.top-bar {
     margin-top: 30px;
 
     @media @mobile {
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     &.ales {
@@ -199,17 +205,29 @@ nav.top-bar {
 
     .dot-container {
       display: inline-block;
+
+      @media @mobile {
+        display: block;
+        float: left;
+        width: 50%;
+        text-align: left;
+        margin-bottom: 10px;
+
+        &.wheat {
+          width: 100%;
+        }
+      }
     }
 
-    .dot-label {
+    .mobile-dot-label {
       display: none;
-      text-transform: uppercase;
-      font-size: 11px;
-      padding-bottom: 5px;
-      position: absolute;
-      top: -20px;
-      text-align: center;
-      width: 100%;
+      font-size: 16px;
+      padding-left: 5px;
+      cursor: pointer;
+
+      @media @mobile {
+        display: inline-block;
+      }
     }
 
     .dot {
@@ -218,6 +236,24 @@ nav.top-bar {
       position: relative;
       border-radius: 50%;
       cursor: pointer;
+      display: inline-block;
+
+      @media @mobile {
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+      }
+
+      .dot-label {
+        display: none;
+        text-transform: uppercase;
+        font-size: 11px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: -20px;
+        text-align: center;
+        width: 100%;
+      }
 
       &:hover {
         opacity: 0.5;
@@ -231,6 +267,10 @@ nav.top-bar {
         width: 100%;
         color: @df-off-white;
         left: 0;
+
+        @media @mobile {
+          line-height: 35px;
+        }
       }
 
       &:hover::before {
@@ -241,10 +281,18 @@ nav.top-bar {
         width: 100%;
         color: @df-off-white;
         left: 0;
+
+        @media @mobile {
+          line-height: 35px;
+        }
       }
 
       &:hover .dot-label {
         display: block;
+
+        @media @mobile {
+          display: none;
+        }
       }
     }
 
@@ -253,6 +301,23 @@ nav.top-bar {
       font-family: @block;
       text-align: center;
       padding-top: 5px;
+      clear: both;
+
+      @media @mobile {
+        display: none;
+      }
+
+      &.mobile {
+        display: none;
+        border-bottom: 3px solid @gold;
+        width: 60px;
+        margin: auto;
+        margin-bottom: 20px;
+
+        @media @mobile {
+          display: block;
+        }
+      }
     }
 
     &:last-child {
@@ -300,6 +365,10 @@ nav.top-bar {
   margin: 10px 0 30px 0;
 }
 
+.modal-container {
+  position: relative;
+}
+
 .beer-box {
   display: none;
   background: lighten(@gold, 30%);
@@ -307,9 +376,15 @@ nav.top-bar {
   padding-left: 40px;
   position: relative;
   margin-top: 30px;
+  z-index: 99;
 
   @media @mobile {
-    padding: 10px 20px 30px 20px;
+    padding: 10px 30px 30px 20px;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    height: 100%;
+    overflow: scroll;
   }
 
   &.visible {
@@ -330,7 +405,7 @@ nav.top-bar {
   }
 
   .close {
-    position: absolute;
+    position: fixed;
     font-size: 25px;
     top: 8px;
     right: 12px;
