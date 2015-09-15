@@ -5,27 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:700,500italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:700,700italic' rel='stylesheet' type='text/css'>
     <%= t.include("partials/_adHead.html") %>
   </head>
   <body>
 
-    <div class="top-bar">
-      <img class="top-image" src="./assets/beer-header-NEW.jpg">
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
+    <nav class="top-bar">
+      <a class="logo" href="http://seattletimes.com">
+        <img src="./assets/st-logo.png">
+      </a>
+    </nav>
+
+    <div class="image-bar">
+      <img class="top-image" src="./assets/beer-header-NEW.png">
+      <img class="banner" src="./assets/beerGuideBanner.png">
     </div>
 
     <div class="container">
       <div class="top">
         <div class="title">We're here to help</div>
         <div class="chatter">
-          Overwhelmed by the vast selection of beers at the local market? Stumped when asked if you prefer ales or lagers? If the answer is yes, then this is for you. This is a beginner's guide to the main styles of ales and lagers, and is not meant to be the definitive beer bible.
+          <div class="intro">Overwhelmed by the vast selection of beers at the local market? Stumped when asked if you prefer ales or lagers?</div>
+          <div class="intro">If the answer is yes, then this is for you – a beginner's guide to the main styles of ales and lagers.</div>
         </div>
 
-        <div class="top divider"></div>
+        <div class="thick divider"></div>
 
-        <div class="title">What color is your beer?</div>
+        <div class="title">What shade is your beer?</div>
         <div class="chatter">
-          Pick a color
+          <em>tktktk</em>
         </div>
 
         <div class="group-wrapper">
@@ -35,7 +45,6 @@
                 <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
               <% }
             }); %>
-            <div class="divider"></div>
             <div class="label">Ales</div>
           </div>
 
@@ -46,7 +55,7 @@
                   <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
                 <% }
               }); %>
-              <div class="divider"></div>
+
               <div class="label">Lagers</div>
             </div>
 
@@ -56,22 +65,54 @@
                   <div class="dot" style="background: <%= row.color %>" data-type="<%= row.short %>"></div>
                 <% }
               }); %>
-              <div class="divider"></div>
+
               <div class="label">Wheat</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="info-box"></div>
+      <div class="beer-box"></div>
+
+      <div class="info-box">
+        <div class="text-box">
+          <div class="title">What's in your beer?</div>
+          <div class="divider"></div>
+          <div class="text">
+            The three main ingredients are water, malt (barley grain that has been kiln dried) and hops (a cone-like fruit grown on vines). From the combination of these ingredients and the fermenting yeast used during brewing come the many colors, flavors and aromas of beer.
+          </div>
+        </div>
+
+        <div class="text-box">
+          <div class="title">Beers have style?</div>
+          <div class="divider"></div>
+          <div class="text">
+            The most common beer styles are ales and lagers. When other ingredients are used to enhance the flavor such as wheat, pumpkin, honey, spices, fruit, smoked malt or chile peppers, the beer is known as a specialty beer.
+            <div class="spacer"></div>
+            The alcohol content of beer is measured in percent by volume (ABV). The low end is around 2 percent rising up to a sky-high 25 percent! Most beers have an ABV of 4 to 6 percent.
+          </div>
+        </div>
+
+        <div class="text-box">
+          <div class="title">Pint glass 101</div>
+          <div class="divider"></div>
+          <div class="text">
+            Pint glasses come in different styles. English pint glasses include nonic, imperial and tulip styles. The Becker is the German's pint. Both English and German pint glasses hold 20 ounces. The American pint (tumbler or conical-shaped) glass is the most common style and holds 16 ounces.
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-ad"><%= t.include("partials/_ad.html", { type: "bannerBottom" }) %></div>
+
+      <div class="credits divider"></div>
 
       <div class="credits">
-        <div><span class="credit">Research:</span> Mark Nowlin</div>
-        <div><span class="credit">Design:</span> Frank Mina</div>
-        <div><span class="credit">Graphics:</span> Kelly Shea</div>
-        <div><span class="credit">Development:</span> Audrey Carlsen</div>
+        <span class="credit">Research:</span> Mark Nowlin |
+        <span class="credit">Design:</span> Frank Mina |
+        <span class="credit">Graphics:</span> Kelly Shea |
+        <span class="credit">Development:</span> Audrey Carlsen and Emma O'Neill
         <div class="spacer"></div>
-        <div><span class="credit">Sources:</span> <em>"The Brewers Association Guide to American Craft Beer," 2009, Brewers Association; 2008 BJCP Style Guidelines; Washington Brewers Guild; Seattle Public Library, reference librarians; samueladams.com/world_of_beer.aspx; beertutor.com; greatbrewers.com; beeradvocate.com; beerhistory.com; globalmalt.com</em></div>
+        <div class="source"><span class="credit">Sources:</span> <em>"The Brewers Association Guide to American Craft Beer," 2009, Brewers Association; 2008 BJCP Style Guidelines; Washington Brewers Guild; Seattle Public Library, reference librarians; samueladams.com/world_of_beer.aspx; beertutor.com; greatbrewers.com; beeradvocate.com; beerhistory.com; globalmalt.com</em></div>
         <div class="spacer"></div>
         <div class="copyright">Copyright 2015 The Seattle Times</div>
       </div>
@@ -81,7 +122,7 @@
       <a class="logo" href="http://www.seattletimes.com">
         <img src="./assets/st-logo.png">
       </a>
-      <a class="share-bottom"></a>
+      <a class="share bottom"></a>
     </footer>
 
     <script>
