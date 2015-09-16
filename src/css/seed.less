@@ -138,6 +138,18 @@ nav.top-bar {
   @media @tablet {
     display: inline;
   }
+
+  &.oktoberfest {
+    margin-top: 10px;
+
+    a {
+      color: @brown;
+    }
+
+    a:hover {
+      color: @df-middle-gray;
+    }
+  }
 }
 
 .divider {
@@ -403,8 +415,13 @@ nav.top-bar {
       color: @df-orange;
     }
 
-    @media @mobile {
+    @media @tablet {
       font-size: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      right: 0;
+    }
+    @media @mobile {
       position: fixed;
     }
   }
@@ -533,6 +550,16 @@ footer {
       background: @dark !important;
       color: white !important;
     }
+  }
+}
+
+.share.main {
+  margin: auto;
+  margin-top: 20px;
+
+  label {
+    background: lighten(@gold, 35%) !important;
+    color: @dark !important;
   }
 }
 

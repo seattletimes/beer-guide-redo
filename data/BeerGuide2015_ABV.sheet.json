@@ -80,7 +80,19 @@
   {
     "title": "wheat",
     "short": "wheat",
+    "style": "Weizenbier",
+    "abv": "4.3-5.6"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
     "style": "White Ale",
+    "abv": "4.5-6.0"
+  },
+  {
+    "title": "wheat",
+    "short": "wheat",
+    "style": "Dunkelweizen",
     "abv": "4.5-6.0"
   },
   {
@@ -92,20 +104,8 @@
   {
     "title": "wheat",
     "short": "wheat",
-    "style": "Weizenbier",
-    "abv": "4.3-5.6"
-  },
-  {
-    "title": "wheat",
-    "short": "wheat",
     "style": "Belgian-style",
     "abv": "4.8-5.2"
-  },
-  {
-    "title": "wheat",
-    "short": "wheat",
-    "style": "Dunkelweizen",
-    "abv": "4.5-6.0"
   },
   {
     "title": "wheat",
@@ -296,20 +296,20 @@
   {
     "title": "amber",
     "short": "amber",
-    "style": "Octoberfest",
-    "abv": "5.0-6.5%"
-  },
-  {
-    "title": "amber",
-    "short": "amber",
     "style": "Märzen",
-    "abv": "4.1-6.5"
+    "abv": "4.1-6.5%"
   },
   {
     "title": "amber",
     "short": "amber",
     "style": "Vienne",
     "abv": "4.5-5.7"
+  },
+  {
+    "title": "amber",
+    "short": "amber",
+    "style": "Octoberfest",
+    "abv": "5.0-6.5"
   },
   {
     "title": "amber",

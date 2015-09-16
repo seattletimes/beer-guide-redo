@@ -23,7 +23,9 @@ for (var abv in groupedAbvs) {
   });
 }
 
-Array.prototype.forEach.call(document.querySelectorAll('.dot-container'), function(dot) { 
+var dots = document.querySelectorAll('.dot-container');
+dots = Array.prototype.slice.call(dots);
+dots.forEach(function(dot) { 
   dot.addEventListener("click", function(e) {
     var beer = beerData.filter(function(row) {
       return row.short == e.target.getAttribute("data-type");
