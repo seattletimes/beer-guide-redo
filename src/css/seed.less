@@ -135,7 +135,7 @@ nav.top-bar {
 }
 
 .intro {
-  @media @mobile {
+  @media @tablet {
     display: inline;
   }
 }
@@ -259,22 +259,10 @@ nav.top-bar {
         opacity: 0.5;
       }
 
-      &.selected::before {
-        content: "⬤";
-        position: absolute;
-        line-height: 45px;
-        text-align: center;
-        width: 100%;
-        color: @df-off-white;
-        left: 0;
-
-        @media @mobile {
-          line-height: 35px;
-        }
-      }
-
-      &:hover::before {
-        content: "⬤";
+      &:hover::before, &.selected::before {
+        font-family: FontAwesome;
+        font-size: 25px;
+        content: "\f111";
         position: absolute;
         line-height: 45px;
         text-align: center;
@@ -379,7 +367,7 @@ nav.top-bar {
   z-index: 99;
 
   @media @mobile {
-    padding: 10px 30px 30px 20px;
+    padding: 10px 35px 30px 20px;
     position: fixed;
     top: 0;
     margin-top: 0;
@@ -390,7 +378,7 @@ nav.top-bar {
   &.visible {
     .display-flex();
 
-    @media @tablet {
+    @media @mobile {
       display: block;
     }
   }
@@ -405,7 +393,7 @@ nav.top-bar {
   }
 
   .close {
-    position: fixed;
+    position: absolute;
     font-size: 25px;
     top: 8px;
     right: 12px;
@@ -413,6 +401,11 @@ nav.top-bar {
 
     &:hover {
       color: @df-orange;
+    }
+
+    @media @mobile {
+      font-size: 30px;
+      position: fixed;
     }
   }
 }
@@ -436,11 +429,60 @@ nav.top-bar {
   }
 }
 
+.thin-div {
+  border-bottom: 1px solid @df-light-gray;
+  margin-bottom: 15px;
+
+  .center {
+    position: relative;
+    top: 15px;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    background: white;
+  }
+}
+
+.dont-miss {
+  .display-flex;
+  .flex-wrap(wrap);
+  margin-bottom: 20px;
+  font-size: 17px;
+
+  .story {
+    .flex(0 0 25%);
+
+    @media @mobile {
+      .flex(1 1 50%)
+    }
+  }
+  .padded {
+    padding: 10px;
+  }
+  .small {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: @df-dark-gray;
+    transition: color .1s linear;
+
+    &:hover {
+      color: @df-blue;
+    }
+  }
+}
+
 .credits {
   font-size: 14px;
   text-align: center;
 
   .credit {
+    font-weight: bold;
     font-size: 15px;
     font-family: @block;
     text-align: center;
