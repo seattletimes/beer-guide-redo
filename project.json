@@ -10,12 +10,12 @@
     }
   },
   "title": "A quick guide to the world of beer",
-  "description": "Overwhelmed by the vast selection of beers at the local market? This is for you: a beginner's guide to the main styles of ales and lagers.",
-  "url": "http://projects-staging.seattletimes.com/aromatic-audience/",
+  "description": "A beginner's guide to the main styles of ales and lagers.",
+  "url": "http://projects.seattletimes.com/2015/beer-guide/",
   "slug": "",
   "tags": ["beer", "guide", "ale", "lager", "oktoberfest"],
   "image": "assets/beerGuideTsr.jpeg",
-  "production": false,
+  "production": true,
   "embedded": false,
   "sheets": ["1vJiOVPvkR_Yimk6uvAesja2boxTEKUcJ7QbwKW4l4OQ"]
 }

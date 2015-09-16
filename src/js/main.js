@@ -2,8 +2,6 @@ require("./lib/social");
 require("./lib/ads");
 // var track = require("./lib/tracking");
 
-require("component-responsive-frame/child");
-
 var dot = require("./lib/dot");
 var card = dot.compile(require("./_card.html"));
 
